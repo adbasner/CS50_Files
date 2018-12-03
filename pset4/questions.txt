@@ -1,0 +1,55 @@
+0.  BPM - 16million (24 bits), 
+    PNG - 256 - 16 million (can be 8 or 24 bits)
+    JPEG - 16 milliion (24 bit)
+    GIF - 256 (8 bit)
+    
+1.  Gif supports animation, the rest do not.
+
+2.  lossy formats (jpeg and gif) lose pixels when compression, like taking a photocopy of a photocopy
+    lossless formats to not lose pixels during compression.
+    
+3.  Jpeg and gif
+
+4.  The data, ones and zeros are still there, but the first character is changed which indixates it is deleted.  
+    The file location is then moved to the available to be used sector.
+
+5.  Physically destroy the drive, de magnetize, or overwrite the data (not as consistant).  
+    Overwriting can involve 
+    write null zeros in every location of the hard drive.
+    
+6.  It is a header file that allows you to specify exact width interger types.
+
+7.  It sets the length of types to specific ints in a fixed width
+    i.e. uint8_t = unsigned 8 bit integer.
+    
+8.  8, 32, 32, 16 bits respectively or 1,4,4,2 bytes.
+
+9.  It is the chars BM, a 2 byte WORD type.
+
+10. bfSize is the size, in bytes, of a bitmap file.
+    biSize is the number of bytes required by the structure.
+    They are both DWORD.
+    
+11. If biHeight is negative, the bitmap is a top-down DIB 
+    and its origin is the upper-left corner.
+    
+12. biBitCount
+
+13. It would do it if couldn't create the output file for whatever reason.
+
+14. I believe the BYTE typedef is defined as 8 bits, or one BYTE, so fread reads 1 byte.
+
+15. Each scanline has the end with a multiple of 4 bytes.   
+    So, 3 + 1 = 4.
+    
+16.  The  fseek()  function  sets the file position indicator for the stream
+       pointed to by stream.... It skips the padding in copy.c
+       
+17.  If whence (3rd argument of fseek) is set to SEEK_SET, SEEK_CUR, or SEEK_END, 
+        the offset  is  relative  to
+       the  start of the file, the current position indicator, or end-of-file.  SEEK_CUR
+       therefore sets it relative to the current position indicator.
+       
+18. It looks a little like TA Rob Bowden, maybe holding a cat?
+
+

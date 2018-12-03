@@ -1,0 +1,34 @@
+0.  A lung diseases known as silicosis
+
+1.  Returns resource usage measures
+
+2.  3, self children and thread
+
+3.  The counter doesn't necissarily start at zero, 
+    so the difference between before and after is a better way to measure
+    the value counted.
+    
+4.  The for loop iterates though each character in the text file until the end of the
+    file is reached.  The next loop checks to see if the pointer in the text file is
+    a character, and if it is, adds it to the array "index", so long as the index 
+    isn't too long.  If it is, the word is abandoned and the index array goes back to 
+    position zero and gets ready for the next word. If there is a number, it skips the
+    word.  If the word is valid, the word counter gets increased and the word is 
+    spell checked. If the word is mispelled, it is printed out.  In either case, the 
+    next word is prepared and the index array position is set back to 0.
+    
+5.  fscanf might not be able to find words with non alphabetical sybomls and numbers.
+
+6.  It takes time to load files and check each word.  A more accurate time will be 
+    found if it counts everything.  I couldn't seem to find const anywhere
+    
+7.  I used a hash table, with a node, and a pointer to node next.  The hash table was an
+    array of 3000 nodes in a linked list.
+    
+8.  My first working solution took a total of 6.85 sec for the austin powers text.  
+
+9.  The big thing thing I needed to do was increase the size of the hash table.  I 
+    tried a large variety of different hash table sizes and I found that a hashtable of 
+    3000 linked lists worked the fasted with a time of 0.27 sec.
+    
+10. I still don't quite think I got the unload part down.
